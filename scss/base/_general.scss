@@ -1,6 +1,3 @@
-@import "../utilidades/variables";
-@import "../utilidades/mixin";
-
 /*propiedades para primera foto y nombre de html*/
 main{
     background-color: $color-4;
@@ -10,11 +7,9 @@ main{
     .div-secundarios{
         @include imagen-titulo("../img/patiocolegio.png",0);
     }
-    .main-escuela{
+    .main-escuela .main-index{
         /*le doy la estructura y tamaño deseado a los contenedores*/
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 0.5fr);
+        @include grid-column(3,0.5fr);
     }
     div{
         h1{
@@ -25,7 +20,7 @@ main{
             font-weight: 800;
         }
         .contenedor{
-            /*propiedades de los div que contienen imagenes*/
+            /*propiedades de los div que contienen imagenes en los html index y escuela*/
             @include contenedor-imagenes(20px,20px);
             @include flex-column(1rem);
             .foto-html{
@@ -44,75 +39,6 @@ main{
                     display: block;
                 }
             }
-        }
-        
-        
-    }
-}
-
-
-/*propiedades del html campos-formativos*/
-.main-campos{
-    background-image: url("../img/galeria-c-formativos.jpg");
-    background-size:auto;
-    align-items: center;
-    .div-imagenes-campos{
-        width: 500px;
-        margin: 10px;
-        overflow-x:auto;
-        @include flex-column (1rem);
-    }
-}
-
-
-/*propiedades de efemerides.html*/
-
-main{
-    .main-efemerides{
-        .div-calendario{
-            @include contenedor-imagenes (10px,10px);
-            @include flex-column(1rem);
-            h2{
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-            }
-            .img-calendario{
-                width: 80%;
-            }
-            .descripcion-efemerides{
-                font-style:oblique;
-                font-size:larger;
-            }
-        }
-    }
-}
-
-/*css del contacto.html*/
-
-main{
-    .contactos{
-        text-align: center;    
-        display: grid;
-        grid-template-columns: 1fr;
-        div{
-            margin: 1rem;
-            .img-whatsapp{
-                width: 30px;
-            }
-        }
-    }
-    .mapa{
-        background-color: $color-3;
-
-        
-        @include flex-column(0rem);
-        div{
-            h5{
-                text-align: center;
-                padding: 20px;
-            }
-            iframe{
-                width: 100%;
-            }
-        }
+        }        
     }
 }

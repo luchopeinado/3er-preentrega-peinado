@@ -10,12 +10,19 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #E2DAD6;
 }
+body main .main-efemerides .div-calendario h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+}
+body main .main-efemerides .div-calendario .descripcion-efemerides {
+  font-style: oblique;
+  font-size: small;
+}
 
 /* propiedades del menú*/
 header div nav {
   background-color: #7FA1C3;
 }
-header div nav div div ul li .page-active {
+header div nav div div ul li .page-active { /*propiedades del menú-html activo*/
   color: #E2DAD6;
 }
 header div nav div div ul li .page-active:hover {
@@ -29,24 +36,6 @@ header div nav div div ul li .mouse:active {
 }
 header div div a .imagen-logo {
   width: 80%;
-}
-
-/*propiedades del footer*/
-footer {
-  background-color: #7FA1C3;
-  padding: 10px;
-}
-footer .icon-whatsapp img {
-  width: 50px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-footer .flecha {
-  text-align: center;
-}
-footer .flecha img {
-  width: 30px;
 }
 
 /*propiedades para primera foto y nombre de html*/
@@ -70,11 +59,11 @@ main .div-secundarios {
   margin: 20px;
   margin-top: 0px;
 }
-main .main-escuela {
+main .main-escuela .main-index {
   /*le doy la estructura y tamaño deseado a los contenedores*/
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 0.5fr);
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: 1fr;
 }
 main div h1 {
   /*estilo letras letras h1*/
@@ -84,7 +73,7 @@ main div h1 {
   font-weight: 800;
 }
 main div .contenedor {
-  /*propiedades de los div que contienen imagenes*/
+  /*propiedades de los div que contienen imagenes en los html index y escuela*/
   margin: 20px;
   padding: 20px;
   background-color: #F5EDED;
@@ -114,6 +103,25 @@ main div .contenedor h3 span {
   display: block;
 }
 
+/*propiedades de efemerides.html*/
+main .main-efemerides .div-calendario {
+  margin: 10px;
+  padding: 10px;
+  background-color: #F5EDED;
+  text-align: center;
+  border-radius: 1rem; /*borde redondo*/
+  border: 3px solid #7FA1C3;
+  display: flex;
+  flex-direction: column; /*queda uno abajo de otro*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .main-efemerides .div-calendario .img-calendario {
+  width: 80%;
+}
+
 /*propiedades del html campos-formativos*/
 .main-campos {
   background-image: url("../img/galeria-c-formativos.jpg");
@@ -130,32 +138,6 @@ main div .contenedor h3 span {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-/*propiedades de efemerides.html*/
-main .main-efemerides .div-calendario {
-  margin: 10px;
-  padding: 10px;
-  background-color: #F5EDED;
-  text-align: center;
-  border-radius: 1rem; /*borde redondo*/
-  border: 3px solid #7FA1C3;
-  display: flex;
-  flex-direction: column; /*queda uno abajo de otro*/
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-main .main-efemerides .div-calendario h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-main .main-efemerides .div-calendario .img-calendario {
-  width: 80%;
-}
-main .main-efemerides .div-calendario .descripcion-efemerides {
-  font-style: oblique;
-  font-size: larger;
 }
 
 /*css del contacto.html*/
@@ -185,6 +167,25 @@ main .mapa div h5 {
 }
 main .mapa div iframe {
   width: 100%;
+}
+
+/*propiedades del footer*/
+footer {
+  background-color: #7FA1C3;
+  padding: 10px;
+}
+footer .icon-whatsapp { /*propiedades del icono del whatsapp del footer*/ }
+footer .icon-whatsapp img {
+  width: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+footer .flecha { /*propiedades de la flecha del footer*/
+  text-align: center;
+}
+footer .flecha img {
+  width: 30px;
 }
 
 @media screen and (min-width: 768px) {

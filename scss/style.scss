@@ -1,5 +1,14 @@
 @import "base/reset";
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "base/tipografia";
+@import "layout/header";
+//nav
 @import "base/general";
-@import "base/mq-tablet";
-@import "base/mq-desktop";
+@import "base/main-efemerides";
+@import "base/main-campos-formativos";
+@import "base/main-contacto";
+@import "layout/footer";
+@import "pages/mq-tablet";
+@import "pages/mq-desktop";
 
