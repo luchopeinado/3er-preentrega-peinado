@@ -83,7 +83,6 @@ main div .contenedor {
   display: flex;
   flex-direction: column; /*queda uno abajo de otro*/
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -114,7 +113,6 @@ main .main-efemerides .div-calendario {
   display: flex;
   flex-direction: column; /*queda uno abajo de otro*/
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -135,7 +133,6 @@ main .main-efemerides .div-calendario .img-calendario {
   display: flex;
   flex-direction: column; /*queda uno abajo de otro*/
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -157,7 +154,6 @@ main .mapa {
   display: flex;
   flex-direction: column; /*queda uno abajo de otro*/
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 0rem;
 }

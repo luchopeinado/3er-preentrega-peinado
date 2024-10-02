@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column; /*queda uno abajo de otro*/
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     gap: $gap;
 }
@@ -37,5 +36,6 @@
     display: grid;
     grid-template-columns: repeat($cantidad, $ancho);
     grid-template-rows: 1fr;
+
 
 }
